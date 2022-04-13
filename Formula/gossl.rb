@@ -11,7 +11,7 @@ class Gossl < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/yakuter/gossl/releases/download/v0.1.5/gossl_0.1.5_macOS_arm64.tar.gz"
-      sha256 "bbaf6a16098dd44dc9d08ce1f4368e24e77614bcae608e750a9e22e2ccb8125a"
+      sha256 "a0ae16964e1e7245f8d5b7a495502a4b2de82606a2cb3f317d83a54c7ef15257"
 
       def install
         bin.install "gossl"
@@ -19,7 +19,7 @@ class Gossl < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/yakuter/gossl/releases/download/v0.1.5/gossl_0.1.5_macOS_amd64.tar.gz"
-      sha256 "f54456aa5f1b875c838a106ad6972f3cf783947b9220f0a4dd65cdce16d9351c"
+      sha256 "05b8073a6bca077dce6d926d111edafca47298740ed8a142afb579a3d05f1603"
 
       def install
         bin.install "gossl"
@@ -30,7 +30,7 @@ class Gossl < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yakuter/gossl/releases/download/v0.1.5/gossl_0.1.5_linux_arm64.tar.gz"
-      sha256 "3590770d093dfa0839286e4cd23ecb4d109c55e58591c132218243d2c00328ee"
+      sha256 "1499b8547ab859b452d890465913d5d37349c730512d3ea35a5aa54007acb3d9"
 
       def install
         bin.install "gossl"
@@ -38,7 +38,7 @@ class Gossl < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/yakuter/gossl/releases/download/v0.1.5/gossl_0.1.5_linux_amd64.tar.gz"
-      sha256 "f6b82f3254ce9f3ff7fdc9e757e94317c01848ea888905777f881394dee57da6"
+      sha256 "49d7c5cf7c6e1caf83b6fd9736e793fe56707dd7a9eb58bcd9f348d7688f8895"
 
       def install
         bin.install "gossl"
